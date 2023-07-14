@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <h1>Instagram</h1>
+        <!-- //after login we create a welcome page -->
+        <form action="welcome.html">
+            <!-- // we don't use <p> because form used for<lable> or <placeholder> for means why? -->
+                <!-- <fieldset> used for group <legend>used for login -->
+            <fieldset>
+                <legend>LOGIN</legend>
+                <label for="uname">Enter the username</label>
+                <input type="text" placeholder="Enter the user name"name="username"id="uname"required="please fill out this field"><br>
+                <label for="password" >Enter the password</label>
+                <input type="password"id="password"name="psw"required><br>
+                <input type="Submit"value="login">
+                <input type="reset">
+            </fieldset>
+        </form>
+        <a href="signup.html">signup</a>
+        
+    </body>
+</html>

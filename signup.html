@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >signup page</title>
+        <style>
+            h1{
+                color: red;
+                text-align: center;
+                text-shadow: 2px 2px 2px black;
+            }
+            .form{
+                border:1px solid black;
+                background-color: lightcyan;
+                border-radius:  0 50px;
+                padding: 20px;
+                width: 300px;
+                margin: auto;
+            }
+            input[type=text]{
+                color:black;
+                width : 200px;
+                margin-bottom: 20px;
+                border: 1px solid black;
+
+            }
+            input[type=email]{
+                
+                border:1px solid black ;
+            }
+            input[type=number]{
+                border:1px solid black ;
+            }
+            textarea{
+                border-radius: 50px 0px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>Signup page</h1>
+        <div class="form">
+            <form action="welcome.html">
+                <input type="text"name="fname"placeholder="Enter the first name"required><br>
+                <input type="text"name="lname"placeholder="Enter the last name"required><br>
+                <input type="email"name="fname"placeholder="Enter the email id"required><br>
+                <br>
+                <input type="number"name="fname"placeholder="Enter the mobile number"required step="5"minlength="4"><br>
+                <br>
+                <input type="date"placeholder="Enter the DOB"><br>
+                <br>
+                <!-- gender used for selection -->
+                <!-- <fieldset>
+                    <legend>gender</legend>
+                        <select name="gender" id="gender">
+                            <option>select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        
+                        </select>
+                 </fieldset> -->
+                 <!-- gender used for radio -->
+                 <input type="radio" id="Male"name="Gender">
+                 <label for="Male">Male</label>
+        
+                 <input type="radio" id="Female"name="Gender">
+                 <label for="Female">Female</label>
+        
+                 <input type="radio" id="Others"name="Gender">
+                 <label for="Others">Others</label><br>
+        
+                 <br>
+                 <input type="checkbox"name="smsnotification"id="smsnote">
+                 <label for="smsnote">For SMS Notification</label><br>
+        
+                 <input type="checkbox"name="mailnotification"id="mailnote">
+                 <label for="mailnote">For Mail Notification</label><br>
+        
+                 <input type="checkbox"name="whatsappnotification"id="smsnote">
+                 <label for="whatsappnote">For Whatsapp Notification </label><br>
+                 <br>
+                 <textarea name="feedback" id="fb" cols="30" rows="5"></textarea>
+                 <br>
+                 <input type="submit" value="create account">
+            </form>
+        </div>
+    </body>
+</html>
